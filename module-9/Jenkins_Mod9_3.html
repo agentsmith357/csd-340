@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Elijah Finch
+    Assignment 9.3
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstWord = "journey";
+        var secondWord = "stars";
+        var thirdWord = "hope";
+        var fourthWord = "future";
+    </script>
+</head>
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <p>Once upon a time, a brave explorer set out on a <span id="word1">_________</span> to discover new lands and hidden secrets beyond the horizon.</p>
+    <p>Above him, the <span id="word2">_________</span> guided his path as he sailed through uncharted waters, determined to find his destiny.</p>
+    <p>With <span id="word3">_________</span> in his heart, he dreamed of a better <span id="word4">_________</span> for all who would follow in his footsteps.</p>
+
+    <p>
+        <button type="button" onclick="document.getElementById('word1').innerHTML = firstWord">journey</button>
+        <button type="button" onclick="document.getElementById('word2').innerHTML = secondWord">stars</button>
+        <button type="button" onclick="document.getElementById('word3').innerHTML = thirdWord">hope</button>
+        <button type="button" onclick="document.getElementById('word4').innerHTML = fourthWord">future</button>
+    </p>
+</body>
+</html>
