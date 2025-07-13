@@ -1,0 +1,18 @@
+img {
+  width: 220px;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+img:hover {
+  border-color: #00ff00;
+}
+
+#output {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-family: monospace;
+}
