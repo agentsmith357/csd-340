@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <script>
+const books = [
+  "The Shining",
+  "Dracula",
+  "The Haunting of Hill House",
+  "Pet Sematary",
+  "The Exorcist",
+  "House of Leaves",
+  "Bird Box",
+  "Hell House",
+  "Mexican Gothic",
+  "The Silence of the Lambs"
+];
+
+  function sortBooks(order = 'asc') {
+
+    const sorted = books.slice().sort();
+    if (order === 'desc') sorted.reverse();
+
+    document.getElementById("bookList").innerHTML = sorted.map(book => `<li>${book}</li>`).join("");
+
+  }
+      w
+      indow.onload = () => sortBooks('asc');
+
+  </script>
+</head>
+<body>
+  <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    <button onclick="sortBooks('asc')">Top to Bottom</button>
+    <button onclick="sortBooks('desc')">Bottom to Top</button>
+  <ul id="bookList"></ul>
+
+
+</body>
+</html>
